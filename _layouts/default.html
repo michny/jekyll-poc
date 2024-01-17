@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="{{page.root}}css/foundation.css">
     <style>pre > code { border: 0 }</style>
     <link rel="stylesheet" href="{{page.root}}css/font-awesome.css">
-    <link rel="stylesheet" href="{{page.root}}css/coderay.css">
+    <!-- <link rel="stylesheet" href="{{page.root}}css/coderay.css"> -->
     <link rel="stylesheet" href="{{page.root}}css/asciidoctor.css">
+    <link rel="stylesheet" href="{{page.root}}css/asciidoc-pygments.css">
     <script src="{{page.root}}js/vendor/modernizr.js"></script>
     <script src="{{page.root}}js/toc.js"></script>
 </head>
@@ -39,16 +40,6 @@
 <!-- Main Page Content and Sidebar -->
 
 <div class="row">
-
-    <!-- Main Blog Content -->
-    <div class="large-9 columns" role="content">
-
-        {{ content }}
-
-    </div>
-
-    <!-- End Main Content -->
-
     <!-- Sidebar -->
 
     <aside class="large-3 columns">
@@ -59,17 +50,19 @@
             <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.navtitle }}</a></li>
             {% endfor %}
         </ul>
-
-        <div class="panel">
-            <h5>Featured</h5>
-
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon
-                nulla pork belly cupidatat meatloaf cow.</p>
-        </div>
-
     </aside>
 
     <!-- End Sidebar -->
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+
+        {{ content }}
+
+    </div>
+
+    <!-- End Main Content -->
+
+   
 </div>
 
 <!-- End Main Content and Sidebar -->

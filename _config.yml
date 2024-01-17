@@ -16,4 +16,6 @@ asciidoctor:
     icons: font
     idseparator: _
     stylesdir: css
-    source-highlighter: coderay
+    source-highlighter: pygments
+    pygments:css: class
+    pygments-stylesheet: asciidoc-pygments.css

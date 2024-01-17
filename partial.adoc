@@ -1,0 +1,31 @@
+Hello! I am writing some text
+And I do so on multiple lines
+
+== I can also include headers
+This section is really exciting! Don't miss it! `it has inline code in it`
+[source]
+----
+And it also has whole blocks of code!
+WOOOOW!
+----
+
+[source,csharp]
+----
+public static void main() {
+    return "";
+}
+----
+
+[source,html]
+----
+<div>
+<i>hello</i>
+</div>
+----
+
+[source,yaml]
+----
+properties:
+- name: hello
+  displayName: hello2
+----
