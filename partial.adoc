@@ -9,7 +9,7 @@ And it also has whole blocks of code!
 WOOOOW!
 ----
 
-[source,csharp]
+[source,c#]
 ----
 public static void main() {
     return "";
@@ -21,6 +21,14 @@ public static void main() {
 <div>
 <i>hello</i>
 </div>
+----
+
+[source,typescript]
+----
+let val = 1
+for (var i : [1,2,3,4,5]) {
+    console.log(i + val)
+}
 ----
 
 [source,yaml]

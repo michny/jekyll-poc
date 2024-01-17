@@ -4,6 +4,7 @@
 :page-description: A forkable blog-ready Jekyll site using AsciiDoc
 //This is required so it can render the liquid based for loop as an actual for loop rather than just writing the code as text
 :page-liquid:
+:source-highlighter: pygments
 
 You've successfully set up and deployed an Jekyll website powered by AsciiDoc using the https://github.com/asciidoctor/jekyll-asciidoc-quickstart[*Jekyll AsciiDoc Quickstart*] project. If everything is in order then changes to the AsciiDoc content will be automatically published to your `gh_pages` branch and hosted via Jekyll and Github.
 
@@ -20,20 +21,6 @@ You may also edit your content directly on Github. To do this, navigate the brow
 For blog posts, Jekyll will recognize files under the `_post` directory, parse the name and place it in the list of posts. These will show up under the `site.posts` variable.
 
 To display a list of posts, use Jekyll syntax similar to the following:
-
-[source,html]
-----
-{% for post in site.posts limit: 5 %}
-<a href=".{{ post.url }}">{{ post.navtitle }}</a>
-{% endfor %}
-----
-
-//++++ means that the content should be treated as raw html (the a href) rather than text
-++++
-{% for post in site.posts limit: 5 %}
-<a href=".{{ post.url }}">{{ post.navtitle }}</a>
-{% endfor %}
-++++
 
 [source,csharp]
 ----
